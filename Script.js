@@ -24,7 +24,11 @@ let boxes = [box1, box2, box3, box4, box5, box6, box7, box8, box9, box10, box11,
 let colors = [];
 let colors2 = [];
 
-let score = 0
+let red, green, baseColor, blue;
+
+let allcolors = [];
+
+let score = 0;
 
 // Get color
 function randomColor() {
@@ -33,7 +37,7 @@ function randomColor() {
   blue = Math.floor(Math.random() * 256);
 
   baseColor = `rgb(${red}, ${green}, ${blue})`;
-};
+}
 
 function shuffle(anArray) {
   anArray.sort(() => Math.random() - 0.5);
@@ -46,17 +50,16 @@ function getColors() {
   colors2 = [...colors];
   allcolors = colors.concat(colors2);
   shuffle(allcolors);
-};
+}
 
 function boxColors(){
   getColors();
   for(let i=0; i<16; i++){
-   boxes[i].classList("`boxs[${i}]`").style.backgroundColor = allColors[i];
+   boxes[i].classList("`boxs[${i}]`").style.backgroundColor = allcolors[i];
    boxes[i].classList("`boxs[${i}]`").style.visibility = "hidden";
   }
 };
 
-randomColor();
 boxColors();
 
 
