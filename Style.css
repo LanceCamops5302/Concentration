@@ -1,0 +1,189 @@
+html{
+    background-color: black;
+  }
+  
+  #title{
+    color: white;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 600%;
+  }
+  
+  /*Score Board*/
+    
+  #Scoreboard{
+    margin: auto;
+    background-color: #B22222;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    width: 1500px;
+    height: 300px;
+  }
+  
+  .player1{
+    margin: auto;
+    padding-top: .03px;
+    background-color: #DC143C;
+    width: 600px;
+    height: 300px;
+  }
+  
+  #scoreText1{
+    color: orange;
+    text-align: center;
+    font-size: 80px;
+    margin: 0px;
+    margin-top: 5px;
+  }
+  
+  #score1{
+    color: orange;
+    text-align: center;
+    font-size: 150px;
+    margin: 5px;
+  }
+  
+  /*Game Board*/
+  
+  #GameBoard{
+    margin: auto;
+    background-color: blue;
+    width: 1700px;
+    heigth: 2000px;
+  }
+  
+  .box1{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box2{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box3{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box4{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box5{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box6{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box7{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box8{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box9{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box10{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box11{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box12{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box13{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box14{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box15{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box16{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box17{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  .box18{
+    width: 230px;
+    height: 230px;
+    background-color: red;
+    float: left;
+    margin: 26px;
+  }
+  
+  h2{
+    color: orange;
+    text-align: center;
+    font-size: 250px;
+    margin: 5px;
+    margin-top: -25px;
+  }
