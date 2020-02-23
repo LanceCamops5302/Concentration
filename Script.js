@@ -214,10 +214,8 @@ box1.onclick = () => {
     sub();
     clear(one);
     clear(two);
-    setTimeout(function(){
-    cover(two)}, 1500);
-    setTimeout(function(){
-    cover(one)}, 1500);
+    cover(one);
+    cover(two);
     one = undefined;
     two = undefined;
   }
@@ -245,10 +243,8 @@ box2.onclick = () => {
     sub();
     clear(one);
     clear(two);
-    setTimeout(function(){
-    cover(two)}, 1500);
-    setTimeout(function(){
-    cover(one)}, 1500);
+    cover(one);
+    cover(two);
     one = undefined;
     two = undefined;
   }
@@ -277,10 +273,8 @@ box3.onclick = () => {
     sub();
     clear(one);
     clear(two);
-    setTimeout(function(){
-    cover(two)}, 1500);
-    setTimeout(function(){
-    cover(one)}, 1500);
+    cover(one);
+    cover(two);
     one = undefined;
     two = undefined;
   }
@@ -308,10 +302,9 @@ box4.onclick = () => {
     sub();
     clear(one);
     clear(two);
-    setTimeout(function(){
-    cover(two)}, 1500);}
-    setTimeout(function(){
-    cover(one)}, 1500);
+    cover(one);
+    cover(two);
     one = undefined;
     two = undefined;
+  }
 };
