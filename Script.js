@@ -84,7 +84,7 @@ let qboxes = [
 let colors = [];
 let colors2 = [];
 
-let red, green, baseColor, index, blue, mark, numIndex;
+let red, green, baseColor, index, blue, mark, numIndex, startTime, endTime;
 
 let allcolors = [];
 
@@ -144,6 +144,14 @@ function clear(box) {
   box.classList.remove("select");
 }
 
+function clearOne(){
+  clear(one);
+}
+
+function clearTwo(){
+  clear(two);
+}
+
 function select(box){
   numIndex = boxes.indexOf(box);
   qboxes[numIndex].innerHTML = "X";
@@ -160,12 +168,10 @@ function match(box){
   box.classList.add("match");
 }
 
-
-// TEST
-// select(box1)
-// cover(box3);
-// match(box2);
-
+function hideBoth(one, two){
+  cover(one);
+  cover(two);
+}
 
 
 // Score
@@ -175,7 +181,7 @@ function keepScore() {
 }
 
 function add(){
-  score = score + 4;
+  score = score + 5;
   keepScore();
 }
 
@@ -184,11 +190,16 @@ function sub(){
   keepScore();
 }
 
+function gameOver(){
+  if(boxes.forEach(box).hasClass("match") === True){
+     alert(`Your Score:${score}`);
+     }
+}
 
 // CALLS
 boxColors();
 
-setTimeout(function coverAll(){ for (let i = 0; i < 18; i++){cover(boxes[i])}}, 5000);
+setTimeout(function coverAll(){ for (let i = 0; i < 18; i++){cover(boxes[i])}}, 8000);
 
 
 
@@ -208,14 +219,14 @@ box1.onclick = () => {
     match(two);
     one = undefined;
     two = undefined;
+    gameOver();
   } else if (two === undefined) {
     select(one);
   } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
     sub();
     clear(one);
     clear(two);
-    cover(one);
-    cover(two);
+    setTimeout(hideBoth, 2000, one, two);
     one = undefined;
     two = undefined;
   }
@@ -237,14 +248,14 @@ box2.onclick = () => {
     match(two);
     one = undefined;
     two = undefined;
+    gameOver();
   } else if (two === undefined) {
-    select(one)
+    select(one);
   } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
     sub();
     clear(one);
     clear(two);
-    cover(one);
-    cover(two);
+    setTimeout(hideBoth, 2000, one, two);
     one = undefined;
     two = undefined;
   }
@@ -267,14 +278,14 @@ box3.onclick = () => {
     match(two);
     one = undefined;
     two = undefined;
+    gameOver();
   } else if (two === undefined) {
     select(one)
   } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
     sub();
     clear(one);
     clear(two);
-    cover(one);
-    cover(two);
+    setTimeout(hideBoth, 2000, one, two);
     one = undefined;
     two = undefined;
   }
@@ -296,14 +307,410 @@ box4.onclick = () => {
     match(two);
     one = undefined;
     two = undefined;
+    gameOver();
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+box5.onclick = () => {
+  if (one === undefined) {
+    one = box5;
+  } else {
+    two = box5;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    one = undefined;
+    two = undefined;
+    gameOver();
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+box6.onclick = () => {
+  if (one === undefined) {
+    one = box6;
+  } else {
+    two = box6;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    one = undefined;
+    two = undefined;
+    gameOver();
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+box7.onclick = () => {
+  if (one === undefined) {
+    one = box7;
+  } else {
+    two = box7;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    one = undefined;
+    two = undefined;
+    gameOver();
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+box8.onclick = () => {
+  if (one === undefined) {
+    one = box8;
+  } else {
+    two = box8;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    gameOver();
+    one = undefined;
+    two = undefined;
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+box9.onclick = () => {
+  if (one === undefined) {
+    one = box9;
+  } else {
+    two = box9;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    gameOver();
+    one = undefined;
+    two = undefined;
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+box10.onclick = () => {
+  if (one === undefined) {
+    one = box10;
+  } else {
+    two = box10;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    one = undefined;
+    two = undefined;
+    gameOver();
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+box11.onclick = () => {
+  if (one === undefined) {
+    one = box11;
+  } else {
+    two = box11;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    one = undefined;
+    two = undefined;
+    gameOver();
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+
+box12.onclick = () => {
+  if (one === undefined) {
+    one = box12;
+  } else {
+    two = box12;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    one = undefined;
+    two = undefined;
+    gameOver();
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+
+};
+
+
+box13.onclick = () => {
+  if (one === undefined) {
+    one = box13;
+  } else {
+    two = box13;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    one = undefined;
+    two = undefined;
+    gameOver();
   } else if (two === undefined) {
     select(one)
   } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
     sub();
     clear(one);
     clear(two);
-    cover(one);
-    cover(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+
+box14.onclick = () => {
+  if (one === undefined) {
+    one = box14;
+  } else {
+    two = box14;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    one = undefined;
+    two = undefined;
+    gameOver();
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+box15.onclick = () => {
+  if (one === undefined) {
+    one = box15;
+  } else {
+    two = box15;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    one = undefined;
+    two = undefined;
+    gameOver();
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+box16.onclick = () => {
+  if (one === undefined) {
+    one = box16;
+  } else {
+    two = box16;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    one = undefined;
+    two = undefined;
+    gameOver();
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+box17.onclick = () => {
+  if (one === undefined) {
+    one = box17;
+  } else {
+    two = box17;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    one = undefined;
+    two = undefined;
+    gameOver();
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
+    one = undefined;
+    two = undefined;
+  }
+};
+
+box18.onclick = () => {
+  if (one === undefined) {
+    one = box18;
+  } else {
+    two = box18;
+  }
+  
+  if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
+    add();
+    clear(one);
+    clear(two);
+    match(one);
+    match(two);
+    one = undefined;
+    two = undefined;
+    gameOver();
+  } else if (two === undefined) {
+    select(one);
+  } else if (two !== undefined && one.style.backgroundColor != two.style.backgroundColor) {
+    sub();
+    clear(one);
+    clear(two);
+    setTimeout(hideBoth, 2000, one, two);
     one = undefined;
     two = undefined;
   }
