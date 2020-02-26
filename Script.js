@@ -183,12 +183,12 @@ function keepScore() {
 }
 
 function add(){
-  score = score + 5;
+  score = score + 10;
   keepScore();
 }
 
 function sub(){
-  score = score - 2;
+  score = score - 5;
   keepScore();
 }
 
