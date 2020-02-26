@@ -214,9 +214,9 @@ setTimeout(function coverAll(){ for (let i = 0; i < 18; i++){cover(boxes[i])}}, 
 
 // ON CLICK
 box1.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box1.classList.contains("match")) {
     one = box1;
-  } else {
+  } else if (two === undefined&& !box1.classList.contains("match")) {
     two = box1;
   }
   
@@ -243,9 +243,9 @@ box1.onclick = () => {
 
 
 box2.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box2.classList.contains("match")) {
     one = box2;
-  } else {
+  } else if (two === undefined && !box2.classList.contains("match")) {
     two = box2;
   }
   
@@ -273,9 +273,9 @@ box2.onclick = () => {
 
 
 box3.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box3.classList.contains("match")) {
     one = box3;
-  } else {
+  } else if (two === undefined && !box3.classList.contains("match")) {
     two = box3;
   }
   
@@ -302,11 +302,12 @@ box3.onclick = () => {
 
 
 box4.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box4.classList.contains("match")) {
     one = box4;
-  } else {
+  } else if (two === undefined && !box4.classList.contains("match")) {
     two = box4;
   }
+  
   
   if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
     add();
@@ -330,11 +331,12 @@ box4.onclick = () => {
 };
 
 box5.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box5.classList.contains("match")) {
     one = box5;
-  } else {
+  } else if (two === undefined && !box5.classList.contains("match")) {
     two = box5;
   }
+  
   
   if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
     add();
@@ -358,11 +360,12 @@ box5.onclick = () => {
 };
 
 box6.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box6.classList.contains("match")) {
     one = box6;
-  } else {
+  } else if (two === undefined && !box6.classList.contains("match")) {
     two = box6;
   }
+  
   
   if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
     add();
@@ -386,11 +389,12 @@ box6.onclick = () => {
 };
 
 box7.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box7.classList.contains("match")) {
     one = box7;
-  } else {
+  } else if (two === undefined && !box7.classList.contains("match")) {
     two = box7;
   }
+  
   
   if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
     add();
@@ -414,11 +418,12 @@ box7.onclick = () => {
 };
 
 box8.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box8.classList.contains("match")) {
     one = box8;
-  } else {
+  } else if (two === undefined && !box8.classList.contains("match")) {
     two = box8;
   }
+  
   
   if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
     add();
@@ -442,11 +447,12 @@ box8.onclick = () => {
 };
 
 box9.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box9.classList.contains("match")) {
     one = box9;
-  } else {
+  } else if (two === undefined && !box9.classList.contains("match")) {
     two = box9;
   }
+  
   
   if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
     add();
@@ -470,11 +476,12 @@ box9.onclick = () => {
 };
 
 box10.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box10.classList.contains("match")) {
     one = box10;
-  } else {
+  } else if (two === undefined && !box10.classList.contains("match")) {
     two = box10;
   }
+  
   
   if (two !== undefined && one.style.backgroundColor == two.style.backgroundColor && boxes.indexOf(one) != boxes.indexOf(two)) {
     add();
@@ -498,9 +505,9 @@ box10.onclick = () => {
 };
 
 box11.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box11.classList.contains("match")) {
     one = box11;
-  } else {
+  } else if (two === undefined && !box11.classList.contains("match")) {
     two = box11;
   }
   
@@ -527,9 +534,9 @@ box11.onclick = () => {
 
 
 box12.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box12.classList.contains("match")) {
     one = box12;
-  } else {
+  } else if (two === undefined && !box12.classList.contains("match")) {
     two = box12;
   }
   
@@ -557,9 +564,9 @@ box12.onclick = () => {
 
 
 box13.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box13.classList.contains("match")) {
     one = box13;
-  } else {
+  } else if (two === undefined && !box13.classList.contains("match")) {
     two = box13;
   }
   
@@ -586,9 +593,9 @@ box13.onclick = () => {
 
 
 box14.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box14.classList.contains("match")) {
     one = box14;
-  } else {
+  } else if (two === undefined && !box14.classList.contains("match")) {
     two = box14;
   }
   
@@ -614,9 +621,9 @@ box14.onclick = () => {
 };
 
 box15.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box15.classList.contains("match")) {
     one = box15;
-  } else {
+  } else if (two === undefined && !box15.classList.contains("match")) {
     two = box15;
   }
   
@@ -642,9 +649,9 @@ box15.onclick = () => {
 };
 
 box16.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box16.classList.contains("match")) {
     one = box16;
-  } else {
+  } else if (two === undefined && !box16.classList.contains("match")) {
     two = box16;
   }
   
@@ -670,9 +677,9 @@ box16.onclick = () => {
 };
 
 box17.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box17.classList.contains("match")) {
     one = box17;
-  } else {
+  } else if (two === undefined && !box17.classList.contains("match")) {
     two = box17;
   }
   
@@ -698,9 +705,9 @@ box17.onclick = () => {
 };
 
 box18.onclick = () => {
-  if (one === undefined) {
+  if (one === undefined && !box18.classList.contains("match")) {
     one = box18;
-  } else {
+  } else if (two === undefined && !box18.classList.contains("match")) {
     two = box18;
   }
   
