@@ -214,9 +214,9 @@ setTimeout(function coverAll(){ for (let i = 0; i < 18; i++){cover(boxes[i])}}, 
 
 // ON CLICK
 box1.onclick = () => {
-  if (one === undefined && !box1.classList.contains("match")) {
+  if (one === undefined && !box1.classList.contains("match") && box1.classList.contains("cover")) {
     one = box1;
-  } else if (two === undefined&& !box1.classList.contains("match")) {
+  } else if (two === undefined && !box1.classList.contains("match") && box1.classList.contains("cover")) {
     two = box1;
   }
   
@@ -241,11 +241,10 @@ box1.onclick = () => {
   }
 };
 
-
 box2.onclick = () => {
-  if (one === undefined && !box2.classList.contains("match")) {
+  if (one === undefined && !box2.classList.contains("match") && box2.classList.contains("cover")) {
     one = box2;
-  } else if (two === undefined && !box2.classList.contains("match")) {
+  } else if (two === undefined && !box2.classList.contains("match") && box2.classList.contains("cover")) {
     two = box2;
   }
   
@@ -271,11 +270,10 @@ box2.onclick = () => {
 
 };
 
-
 box3.onclick = () => {
-  if (one === undefined && !box3.classList.contains("match")) {
+  if (one === undefined && !box3.classList.contains("match") && box3.classList.contains("cover")) {
     one = box3;
-  } else if (two === undefined && !box3.classList.contains("match")) {
+  } else if (two === undefined && !box3.classList.contains("match")&& box3.classList.contains("cover")) {
     two = box3;
   }
   
@@ -300,11 +298,10 @@ box3.onclick = () => {
   }
 };
 
-
 box4.onclick = () => {
-  if (one === undefined && !box4.classList.contains("match")) {
+  if (one === undefined && !box4.classList.contains("match") && box4.classList.contains("cover")) {
     one = box4;
-  } else if (two === undefined && !box4.classList.contains("match")) {
+  } else if (two === undefined && !box4.classList.contains("match") && box4.classList.contains("cover")) {
     two = box4;
   }
   
@@ -331,9 +328,9 @@ box4.onclick = () => {
 };
 
 box5.onclick = () => {
-  if (one === undefined && !box5.classList.contains("match")) {
+  if (one === undefined && !box5.classList.contains("match") && box5.classList.contains("cover")) {
     one = box5;
-  } else if (two === undefined && !box5.classList.contains("match")) {
+  } else if (two === undefined && !box5.classList.contains("match") && box5.classList.contains("cover")) {
     two = box5;
   }
   
@@ -360,9 +357,9 @@ box5.onclick = () => {
 };
 
 box6.onclick = () => {
-  if (one === undefined && !box6.classList.contains("match")) {
+  if (one === undefined && !box6.classList.contains("match") && box6.classList.contains("cover")) {
     one = box6;
-  } else if (two === undefined && !box6.classList.contains("match")) {
+  } else if (two === undefined && !box6.classList.contains("match") && box6.classList.contains("cover")) {
     two = box6;
   }
   
@@ -389,9 +386,9 @@ box6.onclick = () => {
 };
 
 box7.onclick = () => {
-  if (one === undefined && !box7.classList.contains("match")) {
+  if (one === undefined && !box7.classList.contains("match") && box7.classList.contains("cover")) {
     one = box7;
-  } else if (two === undefined && !box7.classList.contains("match")) {
+  } else if (two === undefined && !box7.classList.contains("match") && box7.classList.contains("cover")) {
     two = box7;
   }
   
@@ -418,9 +415,9 @@ box7.onclick = () => {
 };
 
 box8.onclick = () => {
-  if (one === undefined && !box8.classList.contains("match")) {
+  if (one === undefined && !box8.classList.contains("match") && box8.classList.contains("cover")) {
     one = box8;
-  } else if (two === undefined && !box8.classList.contains("match")) {
+  } else if (two === undefined && !box8.classList.contains("match") && box8.classList.contains("cover")) {
     two = box8;
   }
   
@@ -447,9 +444,9 @@ box8.onclick = () => {
 };
 
 box9.onclick = () => {
-  if (one === undefined && !box9.classList.contains("match")) {
+  if (one === undefined && !box9.classList.contains("match") && box9.classList.contains("cover")) {
     one = box9;
-  } else if (two === undefined && !box9.classList.contains("match")) {
+  } else if (two === undefined && !box9.classList.contains("match") && box9.classList.contains("cover")) {
     two = box9;
   }
   
@@ -476,9 +473,9 @@ box9.onclick = () => {
 };
 
 box10.onclick = () => {
-  if (one === undefined && !box10.classList.contains("match")) {
+  if (one === undefined && !box10.classList.contains("match") && box10.classList.contains("cover")) {
     one = box10;
-  } else if (two === undefined && !box10.classList.contains("match")) {
+  } else if (two === undefined && !box10.classList.contains("match") && box10.classList.contains("cover")) {
     two = box10;
   }
   
@@ -505,9 +502,9 @@ box10.onclick = () => {
 };
 
 box11.onclick = () => {
-  if (one === undefined && !box11.classList.contains("match")) {
+  if (one === undefined && !box11.classList.contains("match") && box11.classList.contains("cover")) {
     one = box11;
-  } else if (two === undefined && !box11.classList.contains("match")) {
+  } else if (two === undefined && !box11.classList.contains("match") && box11.classList.contains("cover")) {
     two = box11;
   }
   
@@ -532,11 +529,10 @@ box11.onclick = () => {
   }
 };
 
-
 box12.onclick = () => {
-  if (one === undefined && !box12.classList.contains("match")) {
+  if (one === undefined && !box12.classList.contains("match") && box12.classList.contains("cover")) {
     one = box12;
-  } else if (two === undefined && !box12.classList.contains("match")) {
+  } else if (two === undefined && !box12.classList.contains("match") && box12.classList.contains("cover")) {
     two = box12;
   }
   
@@ -562,11 +558,10 @@ box12.onclick = () => {
 
 };
 
-
 box13.onclick = () => {
-  if (one === undefined && !box13.classList.contains("match")) {
+  if (one === undefined && !box13.classList.contains("match") && box13.classList.contains("cover")) {
     one = box13;
-  } else if (two === undefined && !box13.classList.contains("match")) {
+  } else if (two === undefined && !box13.classList.contains("match") && box13.classList.contains("cover")) {
     two = box13;
   }
   
@@ -591,11 +586,10 @@ box13.onclick = () => {
   }
 };
 
-
 box14.onclick = () => {
-  if (one === undefined && !box14.classList.contains("match")) {
+  if (one === undefined && !box14.classList.contains("match") && box14.classList.contains("cover")) {
     one = box14;
-  } else if (two === undefined && !box14.classList.contains("match")) {
+  } else if (two === undefined && !box14.classList.contains("match") && box14.classList.contains("cover")) {
     two = box14;
   }
   
@@ -621,9 +615,9 @@ box14.onclick = () => {
 };
 
 box15.onclick = () => {
-  if (one === undefined && !box15.classList.contains("match")) {
+  if (one === undefined && !box15.classList.contains("match") && box15.classList.contains("cover")) {
     one = box15;
-  } else if (two === undefined && !box15.classList.contains("match")) {
+  } else if (two === undefined && !box15.classList.contains("match") && box15.classList.contains("cover")) {
     two = box15;
   }
   
@@ -649,9 +643,9 @@ box15.onclick = () => {
 };
 
 box16.onclick = () => {
-  if (one === undefined && !box16.classList.contains("match")) {
+  if (one === undefined && !box16.classList.contains("match") && box16.classList.contains("cover")) {
     one = box16;
-  } else if (two === undefined && !box16.classList.contains("match")) {
+  } else if (two === undefined && !box16.classList.contains("match") && box16.classList.contains("cover")) {
     two = box16;
   }
   
@@ -677,9 +671,9 @@ box16.onclick = () => {
 };
 
 box17.onclick = () => {
-  if (one === undefined && !box17.classList.contains("match")) {
+  if (one === undefined && !box17.classList.contains("match") && box17.classList.contains("cover")) {
     one = box17;
-  } else if (two === undefined && !box17.classList.contains("match")) {
+  } else if (two === undefined && !box17.classList.contains("match") && box17.classList.contains("cover")) {
     two = box17;
   }
   
@@ -705,9 +699,9 @@ box17.onclick = () => {
 };
 
 box18.onclick = () => {
-  if (one === undefined && !box18.classList.contains("match")) {
+  if (one === undefined && !box18.classList.contains("match") && box18.classList.contains("cover")) {
     one = box18;
-  } else if (two === undefined && !box18.classList.contains("match")) {
+  } else if (two === undefined && !box18.classList.contains("match") && box18.classList.contains("cover")) {
     two = box18;
   }
   
