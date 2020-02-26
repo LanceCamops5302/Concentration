@@ -83,6 +83,8 @@ let qboxes = [
 
 let colors = [];
 let colors2 = [];
+let gOver = [];
+let gScore = 0;
 
 let red, green, baseColor, index, blue, mark, numIndex, startTime, endTime;
 
@@ -190,18 +192,25 @@ function sub(){
   keepScore();
 }
 
+
 function gameOver(){
-  if(boxes.forEach(box).hasClass("match") === True){
-     alert(`Your Score:${score}`);
-     }
+  gScore = gScore + 2;
+  if(gScore === 18){
+    alert(`Game Over Score: ${score}`);
+    score = 0;
+    keepScore();
+    boxes.forEach(function(box){
+      clear(box);
+      boxColors();
+      setTimeout(function coverAll(){ for (let i = 0; i < 18; i++){cover(boxes[i])}}, 9000);
+    });
+  }
 }
+
 
 // CALLS
 boxColors();
-
-setTimeout(function coverAll(){ for (let i = 0; i < 18; i++){cover(boxes[i])}}, 8000);
-
-
+setTimeout(function coverAll(){ for (let i = 0; i < 18; i++){cover(boxes[i])}}, 9000);
 
 // ON CLICK
 box1.onclick = () => {

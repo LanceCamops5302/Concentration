@@ -1,13 +1,23 @@
+*{
+  position: relative;
+}
+
 html{
   background-color: black;
+  transform: scale(0.7);
+  transform-origin: 0 0;
+  margin-left: 425px;
+  height: 900px;;
 }
 
 #title{
   color: white;
   margin: auto;
   margin-bottom: 20px;
+  padding-left: 40px;
+  padding-top: 50px;
   text-align: center;
-  font-size: 600%;
+  font-size: 650%;
 }
 
 /*Score Board*/
@@ -51,6 +61,13 @@ html{
   background-color: blue;
   width: 1700px;
   height: 0px;
+}
+
+.box{
+  margin-left: 5px !important;
+  margin-right: 15px !important;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
 }
 
 #box1{
