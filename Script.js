@@ -202,7 +202,9 @@ function gameOver(){
     boxes.forEach(function(box){
       clear(box);
       boxColors();
-      setTimeout(function coverAll(){ for (let i = 0; i < 18; i++){cover(boxes[i])}}, 9000);
+      setTimeout(function coverAll(){ 
+        for (let i = 0; i < 18; i++)
+        {cover(boxes[i])}}, 9000);
     });
   }
 }
